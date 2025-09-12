@@ -96,6 +96,7 @@ export type HeroeType = {
   _id: string;
   _createdAt: string;
   name: string;
-  url: string;
+  imageUrl?: string;
+  url?: string;
   met: boolean;
 };
