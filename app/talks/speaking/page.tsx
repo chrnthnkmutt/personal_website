@@ -42,16 +42,32 @@ export const metadata: Metadata = {
 };
 
 export default async function SpeakingPage() {
+  console.log("🔍 Fetching talks data...");
+  
   const talks: TalkType[] = await sanityFetch({
     query: talksQuery,
     tags: ["talk"],
   });
 
-  // Debug log
-  console.log("Talks data:", talks);
+  // Detailed debug logging
+  console.log("📊 Talks query result:", {
+    totalTalks: talks.length,
+    talks: talks.map(talk => ({
+      id: talk._id,
+      title: talk.title,
+      event: talk.event,
+      date: talk.date,
+      featured: talk.featured
+    }))
+  });
 
   const featuredTalks = talks.filter(talk => talk.featured);
   const otherTalks = talks.filter(talk => !talk.featured);
+  
+  console.log("📈 Filtered talks:", {
+    featured: featuredTalks.length,
+    other: otherTalks.length
+  });
 
   const getTalkTypeColor = (type: string) => {
     const colors = {
