@@ -100,3 +100,41 @@ export const singlePostQuery = groq`*[_type == "Post" && slug.current == $slug][
 }`;
 
 export const heroesQuery = groq`*[_type == "heroe"] | order(_createdAt asc) { _id, _createdAt, name, imageUrl, url, met }`;
+
+export const publicationsQuery = groq`*[_type == "publication"] | order(year desc, _createdAt desc) {
+  _id,
+  _createdAt,
+  title,
+  authors,
+  journal,
+  year,
+  abstract,
+  keywords,
+  doi,
+  pdfUrl,
+  externalUrl,
+  type,
+  status,
+  featured
+}`;
+
+export const talksQuery = groq`*[_type == "talk"] | order(date desc, _createdAt desc) {
+  _id,
+  _createdAt,
+  title,
+  description,
+  event,
+  location,
+  date,
+  type,
+  duration,
+  audience,
+  topics,
+  slidesUrl,
+  videoUrl,
+  youtubeVideoId,
+  eventUrl,
+  language,
+  featured,
+  attendees
+}`;

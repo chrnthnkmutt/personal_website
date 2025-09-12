@@ -7,6 +7,7 @@ import {
   HiBookmarkAlt,
   HiOutlineX,
   HiUser,
+  HiSpeakerphone,
 } from "react-icons/hi";
 
 export default function MobileMenu() {
@@ -21,6 +22,11 @@ export default function MobileMenu() {
       title: "Projects",
       href: "/projects",
       icon: HiBeaker,
+    },
+    {
+      title: "Talks",
+      href: "/talks",
+      icon: HiSpeakerphone,
     },
     {
       title: "Blog",

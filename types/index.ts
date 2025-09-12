@@ -100,3 +100,41 @@ export type HeroeType = {
   url?: string;
   met: boolean;
 };
+
+export type PublicationType = {
+  _id: string;
+  _createdAt: string;
+  title: string;
+  authors?: string[];
+  journal?: string;
+  year: number;
+  abstract?: string;
+  keywords?: string[];
+  doi?: string;
+  pdfUrl?: string;
+  externalUrl?: string;
+  type: "journal" | "conference" | "workshop" | "thesis" | "preprint" | "chapter" | "report";
+  status: "published" | "inpress" | "review" | "draft";
+  featured: boolean;
+};
+
+export type TalkType = {
+  _id: string;
+  _createdAt: string;
+  title: string;
+  description?: string;
+  event: string;
+  location?: string;
+  date: string;
+  type: "conference" | "workshop" | "training" | "keynote" | "panel" | "webinar" | "meetup" | "lecture";
+  duration?: number;
+  audience?: "students" | "professionals" | "researchers" | "general" | "mixed";
+  topics?: string[];
+  slidesUrl?: string;
+  videoUrl?: string;
+  youtubeVideoId?: string;
+  eventUrl?: string;
+  language: "en" | "th" | "mixed";
+  featured: boolean;
+  attendees?: number;
+};
