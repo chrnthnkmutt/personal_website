@@ -30,6 +30,8 @@ export type ProfileType = {
   email: string;
   fullBio: PortableTextBlock[];
   location: string;
+  university?: string;
+  degree?: string;
   resumeURL: string;
   og: string;
   usage: PortableTextBlock[];

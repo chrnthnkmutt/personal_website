@@ -12,15 +12,15 @@ import { sanityFetch } from "@/lib/sanity.client";
 import RefLink from "../components/shared/RefLink";
 
 export const metadata: Metadata = {
-  title: "About | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/about"),
+  title: "About | Charunthon Limseelo",
+  metadataBase: new URL("https://boatchrnthn.vercel.app/about"),
   description:
-    "Learn more about my skills, experience and technical background",
+    "Learn more about my skills, experience and technical background in AI, Cloud Computing, and Software Development",
   openGraph: {
-    title: "About | Victor Eke",
-    url: "https://victoreke.com/about",
+    title: "About | Charunthon Limseelo",
+    url: "https://boatchrnthn.vercel.app/about",
     description:
-      "Learn more about my skills, experience and technical background",
+      "Learn more about my skills, experience and technical background in AI, Cloud Computing, and Software Development",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
   },
@@ -42,6 +42,12 @@ export default async function About() {
                 I&apos;m {profile?.fullName ?? "John Doe"}. I live in{" "}
                 {profile?.location ?? "'X'"}, where I build the future.
               </h1>
+              
+              {profile?.university && (
+                <h2 className="font-incognito font-medium text-xl text-zinc-600 dark:text-zinc-400 mb-4">
+                  {profile.degree && `${profile.degree} student at `}{profile.university}
+                </h2>
+              )}
 
               <div className="dark:text-zinc-400 text-zinc-600 leading-relaxed">
                 {profile?.fullBio ? (
@@ -78,7 +84,7 @@ export default async function About() {
                 <div className="flex flex-col text-center gap-y-4">
                   <div className="flex items-center gap-x-3">
                     <RefLink
-                      href="https://www.craft.me/s/WQpQF3jrPIodXp"
+                      href="https://chrnthnkmutt.github.io/cv/"
                       className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
                     >
                       View Résumé <BiLinkExternal className="text-base" />

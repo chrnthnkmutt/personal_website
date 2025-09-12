@@ -18,7 +18,7 @@ const profile = {
       title: "Headline",
       type: "string",
       description: "In one short sentence, what do you do?",
-      validation: (Rule) => Rule.required().min(40).max(80),
+      validation: (Rule) => Rule.required().min(40).max(120),
     }),
     defineField({
       name: "profileImage",
@@ -56,6 +56,18 @@ const profile = {
       title: "Location",
       type: "string",
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: "university",
+      title: "University",
+      type: "string",
+      description: "Current university or educational institution",
+    }),
+    defineField({
+      name: "degree",
+      title: "Degree Program",
+      type: "string",
+      description: "Current degree program or major",
     }),
     defineField({
       name: "fullBio",

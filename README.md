@@ -1,10 +1,10 @@
 <div align="center">
-<a href="https://victoreke.com"><img src="./public/logo.png" width="60px"></a>
+<a href="https://boatchrnthn.vercel.app"><img src="./public/logo.png" width="60px"></a>
 </div>
 
 <div align="center">
-<h1>victoreke.com</h1>
-<p>My personal portfolio website</p>
+<h1>boatchrnthn.vercel.app</h1>
+<p>Charunthon Limseelo's personal portfolio website</p>
 </div>
 
 # Tech Stack
@@ -109,6 +109,10 @@ npm run build
 | [`studio`](./app/studio/[[...index]]/page.tsx) | Where Sanity Studio is mounted                  |
 | [`schemas`](./schemas)                         | Where Sanity Studio gets its content types from |
 | [`sanity.query.ts`](./lib/sanity.query.ts)     | Groq query for Sanity Schema data               |
+
+## Attribution
+
+This website is based on the excellent portfolio template by [Victor Eke](https://victoreke.com). The original template is MIT-licensed and has been customized for Charunthon Limseelo's personal use.
 
 ## License & Usage
 
