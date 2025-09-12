@@ -1,4 +1,5 @@
 import { sanityFetch } from "@/lib/sanity.client";
+import DebugActions from "./DebugActions";
 
 interface DebugTalk {
   _id: string;
@@ -68,7 +69,18 @@ export default async function DebugAllPage() {
 
     return (
       <div className="max-w-6xl mx-auto p-8 space-y-8">
-        <h1 className="text-3xl font-bold mb-8">Complete Database Debug</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-3xl font-bold">Complete Database Debug</h1>
+          <div className="flex gap-3">
+            <a
+              href="/webhook-setup"
+              className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+            >
+              ⚡ Setup Instant Updates
+            </a>
+            <DebugActions />
+          </div>
+        </div>
         
         {/* Talks Section */}
         <div className="border rounded-lg p-6">
