@@ -8,7 +8,7 @@ const config: ClientConfig = {
   apiVersion,
   useCdn: mode === "development" ? true : false,
   ignoreBrowserTokenWarning: true,
-  token,
+  ...(token && { token }), // Only include token if it exists
   perspective: "published",
 };
 

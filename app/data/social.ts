@@ -7,8 +7,6 @@ import {
   BiLogoInstagram,
   BiLogoLinkedinSquare,
   BiLogoStackOverflow,
-  BiLogoSteam,
-  BiLogoUnsplash,
   BiLogoYoutube,
 } from "react-icons/bi";
 import { FaFreeCodeCamp, FaProductHunt } from "react-icons/fa";
@@ -42,20 +40,6 @@ export const socialLinks = [
     name: "Instagram",
     url: "https://instagram.com/boatchrnthn",
     icon: BiLogoInstagram,
-    status: "social",
-  },
-  {
-    id: 7,
-    name: "Steam",
-    url: "https://steamcommunity.com/id/victoreke/",
-    icon: BiLogoSteam,
-    status: "social",
-  },
-  {
-    id: 8,
-    name: "Unsplash",
-    url: "https://unsplash.com/@victoreke",
-    icon: BiLogoUnsplash,
     status: "social",
   },
   {

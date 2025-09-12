@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/logo.png";
 import Theme from "./Theme";
 import UnmountStudio from "./Unmount";
 import MobileMenu from "./MobileMenu";
@@ -19,18 +18,14 @@ export default function Navbar() {
       title: "Blog",
       href: "/blog",
     },
-    {
-      title: "Photos",
-      href: "/photos",
-    },
   ];
 
   return (
     <UnmountStudio>
       <header className="text-sm py-6 md:px-16 px-6 border-b dark:border-zinc-800 border-zinc-200 z-30 md:mb-28 mb-10">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <Link href="/">
-            <Image src={Logo} width={35} height={35} alt="logo" />
+          <Link href="/" className="font-incognito font-bold text-2xl dark:text-white text-zinc-900 hover:text-primary-color transition-colors">
+            CL
           </Link>
 
           <nav className="md:block hidden">
