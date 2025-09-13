@@ -11,7 +11,29 @@ export const table = defineType({
     defineField({
       name: "table",
       title: "Table",
-      type: "table",
+      type: "object",
+      fields: [
+        defineField({
+          name: "rows",
+          title: "Table Rows",
+          type: "array",
+          of: [
+            defineField({
+              name: "row",
+              title: "Row",
+              type: "object",
+              fields: [
+                defineField({
+                  name: "cells",
+                  title: "Cells",
+                  type: "array",
+                  of: [{ type: "string" }],
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
     }),
     defineField({
       name: "caption",

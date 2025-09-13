@@ -67,7 +67,7 @@ export const singleProjectQuery = groq`*[_type == "project" && slug.current == $
   description
 }`;
 
-export const postsQuery = groq`*[_type == "Post"] | order(_createdAt desc){
+export const postsQuery = groq`*[_type == "Post" && isPublished == true] | order(_createdAt desc){
   ${postField},
   date,
   "author": author-> {
@@ -78,7 +78,7 @@ export const postsQuery = groq`*[_type == "Post"] | order(_createdAt desc){
   body,
 }`;
 
-export const featuredPostsQuery = groq`*[_type == "Post" && featured == true] | order(_createdAt desc) {
+export const featuredPostsQuery = groq`*[_type == "Post" && featured == true && isPublished == true] | order(_createdAt desc) {
   ${postField}
 }`;
 

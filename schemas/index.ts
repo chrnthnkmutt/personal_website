@@ -8,6 +8,7 @@ import publication from "./publication";
 import talk from "./talk";
 import { youtube } from "./youtube";
 import { table } from "./table";
+import { code } from "./code";
 import blockContent from "./blockContent";
 import quiz from "./quiz";
 
@@ -25,5 +26,6 @@ export const schemaTypes = [
   blockContent,
   youtube,
   table,
+  code,
   quiz,
 ];

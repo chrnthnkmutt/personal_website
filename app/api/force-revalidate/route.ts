@@ -18,9 +18,13 @@ export async function GET(request: NextRequest) {
     revalidateTag('profile');
     revalidateTag('job');
     revalidateTag('project');
+    revalidateTag('Post');
     
-    // Also revalidate the about page specifically
+    // Also revalidate pages
+    revalidatePath('/');
     revalidatePath('/about');
+    revalidatePath('/blog');
+    revalidatePath('/projects');
     revalidatePath('/talks');
     revalidatePath('/talks/speaking');
     revalidatePath('/talks/publications');

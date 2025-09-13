@@ -19,6 +19,8 @@ export default async function Posts() {
     tags: ["Post"],
   });
 
+  console.log('Posts fetched:', posts.length, 'Published count:', posts.filter(p => p.isPublished).length);
+
   return (
     <section>
       {posts.length > 0 ? (
