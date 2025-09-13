@@ -29,10 +29,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Publications | Charunthon Limseelo",
     description: "Research papers, articles, and academic contributions in NLP, AI, and Data Science by Charunthon Limseelo",
-    url: "https://chrnthnkmutt.github.io/talks/publications",
+    url: "https://boatchrnthn.vercel.app/talks/publications",
     siteName: "Charunthon Limseelo",
     locale: "en_US",
     type: "website",
+    images: "/OpenGraph.png",
   },
 };
 

@@ -21,8 +21,7 @@ export const metadata: Metadata = {
     url: "https://boatchrnthn.vercel.app/about",
     description:
       "Learn more about my skills, experience and technical background in AI, Cloud Computing, and Software Development",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    images: "/OpenGraph.png",
   },
 };
 
@@ -84,7 +83,7 @@ export default async function About() {
                 <div className="flex flex-col text-center gap-y-4">
                   <div className="flex items-center gap-x-3">
                     <RefLink
-                      href="https://chrnthnkmutt.github.io/cv/"
+                      href="https://boatchrnthn.vercel.app/cv/"
                       className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
                     >
                       View Résumé <BiLinkExternal className="text-base" />

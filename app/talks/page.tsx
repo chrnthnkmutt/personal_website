@@ -11,10 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Talks & Publications | Charunthon Limseelo",
     description: "Conference talks, workshops, publications, and media appearances by Charunthon Limseelo",
-    url: "https://chrnthnkmutt.github.io/talks",
+    url: "https://boatchrnthn.vercel.app/talks",
     siteName: "Charunthon Limseelo",
     locale: "en_US",
     type: "website",
+    images: "/OpenGraph.png",
   },
   twitter: {
     title: "Talks & Publications | Charunthon Limseelo",

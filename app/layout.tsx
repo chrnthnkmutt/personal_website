@@ -18,9 +18,9 @@ const options = {
   title: "Charunthon Limseelo | AI Engineer & Data Scientist",
   description:
     "Charunthon Limseelo is an AI Engineer and Data Scientist passionate about artificial intelligence, cloud computing, and innovative technology solutions",
-  url: "https://chrnthnkmutt.github.io",
+  url: "https://boatchrnthn.vercel.app",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "/OpenGraph.png",
 };
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "chrnthnkmutt.github.io",
+    siteName: "boatchrnthn.vercel.app",
     locale: "en-US",
     type: "website",
     description: options.description,

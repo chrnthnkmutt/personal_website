@@ -10,14 +10,13 @@ import PageHeading from "../components/shared/PageHeading";
 
 export const metadata: Metadata = {
   title: "Projects | Charunthon Limseelo",
-  metadataBase: new URL("https://chrnthnkmutt.github.io/projects"),
+  metadataBase: new URL("https://boatchrnthn.vercel.app/projects"),
   description: "Explore projects built by Charunthon Limseelo",
   openGraph: {
     title: "Projects | Charunthon Limseelo",
-    url: "https://chrnthnkmutt.github.io/projects",
+    url: "https://boatchrnthn.vercel.app/projects",
     description: "Explore projects built by Charunthon Limseelo",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
+    images: "/OpenGraph.png",
   },
 };
 

@@ -7,14 +7,13 @@ import PageHeading from "@/app/components/shared/PageHeading";
 
 export const metadata: Metadata = {
   title: "Blog | Charunthon Limseelo",
-  metadataBase: new URL("https://chrnthnkmutt.github.io/blog"),
+  metadataBase: new URL("https://boatchrnthn.vercel.app/blog"),
   description: "Read latest stories from Charunthon Limseelo's Blog",
   openGraph: {
     title: "Blog | Charunthon Limseelo",
-    url: "https://chrnthnkmutt.github.io/blog",
+    url: "https://boatchrnthn.vercel.app/blog",
     description: "Read latest stories from Charunthon Limseelo's Blog",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/blog.png",
+    images: "/OpenGraph.png",
   },
 };
 
