@@ -1,21 +1,5 @@
 import { groq } from "next-sanity";
 
-// Reusable post fields
-const postField = groq`
-  _id,
-  _createdAt,
-  title,
-  "slug": slug.current,
-  description,
-  coverImage {
-    "image": asset->url,
-    "lqip": asset->metadata.lqip,
-    alt,
-  },
-  featured,
-  isPublished
-`;
-
 export const profileQuery = groq`*[_type == "profile"][0]{
   _id,
   fullName,
@@ -65,38 +49,6 @@ export const singleProjectQuery = groq`*[_type == "project" && slug.current == $
   },
   tagline,
   description
-}`;
-
-export const postsQuery = groq`*[_type == "Post" && isPublished == true] | order(_createdAt desc){
-  ${postField},
-  date,
-  "author": author-> {
-    name, 
-    photo, 
-    twitterUrl
-  },
-  body,
-}`;
-
-export const featuredPostsQuery = groq`*[_type == "Post" && featured == true && isPublished == true] | order(_createdAt desc) {
-  ${postField}
-}`;
-
-export const singlePostQuery = groq`*[_type == "Post" && slug.current == $slug][0]{
-  ${postField},
-  _updatedAt,
-  canonicalLink,
-  date,
-  tags,
-  "author": author-> {
-    name, 
-    photo {
-      "image": asset->url,
-      alt
-    }, 
-    twitterUrl
-  },
-  body,
 }`;
 
 export const heroesQuery = groq`*[_type == "heroe"] | order(_createdAt asc) { _id, _createdAt, name, imageUrl, url, met }`;

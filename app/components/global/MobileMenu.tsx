@@ -28,11 +28,6 @@ export default function MobileMenu() {
       href: "/talks",
       icon: HiSpeakerphone,
     },
-    {
-      title: "Blog",
-      href: "/blog",
-      icon: HiBookmarkAlt,
-    },
   ];
 
   const onToggleNav = () => {

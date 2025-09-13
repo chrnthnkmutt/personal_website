@@ -6,12 +6,13 @@ import {
   BiLogoGitlab,
   BiLogoInstagram,
   BiLogoLinkedinSquare,
+  BiLogoMedium,
   BiLogoStackOverflow,
   BiLogoYoutube,
 } from "react-icons/bi";
 import { FaFreeCodeCamp, FaProductHunt } from "react-icons/fa";
 import { SiCodewars } from "react-icons/si";
-import { FaHashnode, FaHashtag, FaSquareXTwitter } from "react-icons/fa6";
+import { FaHashtag, FaSquareXTwitter } from "react-icons/fa6";
 
 export const socialLinks = [
   {
@@ -46,7 +47,7 @@ export const socialLinks = [
     id: 9,
     name: "Medium",
     url: "https://medium.com/@boatchrnthn",
-    icon: FaHashnode,
-    status: "publication",
+    icon: BiLogoMedium,
+    status: "social",
   },
 ];

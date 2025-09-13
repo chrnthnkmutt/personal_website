@@ -1,6 +1,5 @@
 import Image from "next/image";
 import duckImage from "@/public/searching-duck.gif";
-import FeaturedPosts from "../pages/FeaturedPosts";
 
 type props = {
   title: string;
@@ -26,7 +25,21 @@ export default function NotFoundComponent({ title, description }: props) {
       </header>
 
       <div className="max-w-4xl grid lg:grid-cols-2 grid-cols-1 gap-4 mt-12">
-        <FeaturedPosts />
+        <div className="bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-lg p-8 text-center">
+          <div className="text-4xl mb-4">📝</div>
+          <h3 className="text-xl font-semibold mb-2">Check out my projects</h3>
+          <p className="dark:text-zinc-400 text-zinc-600 mb-4">
+            Explore my latest projects and experiments.
+          </p>
+        </div>
+        
+        <div className="bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-lg p-8 text-center">
+          <div className="text-4xl mb-4">🎤</div>
+          <h3 className="text-xl font-semibold mb-2">Latest Talks & Publications</h3>
+          <p className="dark:text-zinc-400 text-zinc-600 mb-4">
+            See my recent speaking engagements and research publications.
+          </p>
+        </div>
       </div>
     </main>
   );

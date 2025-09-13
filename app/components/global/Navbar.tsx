@@ -18,10 +18,6 @@ export default function Navbar() {
       title: "Talks",
       href: "/talks",
     },
-    {
-      title: "Blog",
-      href: "/blog",
-    },
   ];
 
   return (
