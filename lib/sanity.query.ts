@@ -51,7 +51,7 @@ export const singleProjectQuery = groq`*[_type == "project" && slug.current == $
   description
 }`;
 
-export const heroesQuery = groq`*[_type == "heroe"] | order(_createdAt asc) { _id, _createdAt, name, imageUrl, url, met }`;
+export const heroesQuery = groq`*[_type == "heroe"] | order(name asc) { _id, _createdAt, name, imageUrl, url, met }`;
 
 export const publicationsQuery = groq`*[_type == "publication"] | order(year desc, _createdAt desc) {
   _id,
