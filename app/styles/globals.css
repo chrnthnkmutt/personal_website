@@ -18,7 +18,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--incognito), "Inter", sans-serif;
+  font-family: var(--ibm-plex-sans-thai), var(--ibm-plex-sans), sans-serif;
 }
 
 .path {

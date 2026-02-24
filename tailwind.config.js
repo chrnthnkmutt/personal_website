@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        incognito: ["var(--incognito)"],
-        inter: ["var(--inter)"],
+        incognito: ["var(--ibm-plex-sans-thai)"],
+        inter: ["var(--ibm-plex-sans)"],
       },
       colors: {
         "primary-color": "#33E092",
