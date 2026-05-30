@@ -9,6 +9,7 @@ import {
   BiLogoMedium,
   BiLogoStackOverflow,
   BiLogoYoutube,
+  BiLogoFacebook,
 } from "react-icons/bi";
 import { FaFreeCodeCamp, FaProductHunt } from "react-icons/fa";
 import { SiCodewars } from "react-icons/si";
@@ -41,6 +42,13 @@ export const socialLinks = [
     name: "Instagram",
     url: "https://instagram.com/boatchrnthn",
     icon: BiLogoInstagram,
+    status: "social",
+  },
+  {
+    id: 7,
+    name: "Facebook",
+    url: "https://facebook.com/boatchrnthn",
+    icon: BiLogoFacebook,
     status: "social",
   },
   {
