@@ -21,6 +21,10 @@ h4 {
   font-family: var(--ibm-plex-sans-thai), var(--ibm-plex-sans), sans-serif;
 }
 
+body {
+  font-family: var(--ibm-plex-sans), sans-serif;
+}
+
 .path {
   stroke-dasharray: 500px 100px;
   animation: animate 100s linear infinite alternate-reverse;
