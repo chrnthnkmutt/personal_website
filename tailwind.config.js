@@ -11,6 +11,8 @@ module.exports = {
       fontFamily: {
         incognito: ["var(--ibm-plex-sans-thai)"],
         inter: ["var(--ibm-plex-sans)"],
+        lora: ["var(--lora)"],
+        "source-sans": ["var(--source-sans)"],
       },
       colors: {
         "primary-color": "#33E092",

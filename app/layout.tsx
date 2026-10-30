@@ -1,8 +1,12 @@
 import "@/app/styles/globals.css";
 import Script from "next/script";
 import type { Metadata } from "next";
-import { ibmPlexSans, ibmPlexSansThai } from "./assets/font/font";
-import Navbar from "./components/global/Navbar";
+import {
+  ibmPlexSans,
+  ibmPlexSansThai,
+  lora,
+  sourceSans,
+} from "./assets/font/font";
 import Footer from "./components/global/Footer";
 import { Providers } from "./providers";
 
@@ -44,10 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${ibmPlexSans.variable} ${ibmPlexSansThai.variable} ${ibmPlexSans.className} dark:bg-zinc-900 bg-white dark:text-white text-zinc-700`}
+        className={`${ibmPlexSans.variable} ${ibmPlexSansThai.variable} ${lora.variable} ${sourceSans.variable} ${ibmPlexSans.className} dark:bg-zinc-900 bg-white dark:text-white text-zinc-700 min-h-screen flex flex-col`}
       >
         <Providers>
-          <Navbar />
           {children}
           <Footer />
         </Providers>
